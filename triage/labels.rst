@@ -33,6 +33,7 @@ These labels are used to specify the type of issue:
 * :gh-label:`type-refactor`: for general code refactoring that
   does not change user-facing behaviour.
 * :gh-label:`type-security`: for security issues.
+  Security issues do not need the :gh-label:`!type-bug` label.
   See also `Reporting security issues in Python`_.
 
 
