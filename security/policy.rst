@@ -1,3 +1,5 @@
+.. _security-policy:
+
 ===============
 Security policy
 ===============

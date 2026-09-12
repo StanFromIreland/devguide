@@ -29,6 +29,8 @@ If you would like to file an issue about this devguide, please do so in the
 :github:`devguide repository <python/devguide>` instead.
 
 
+.. _checking-if-a-bug-already-exists:
+
 Checking if a bug already exists
 --------------------------------
 
@@ -90,6 +92,25 @@ There are a number of additional fields like **Assignees**, **Labels**,
 and **Projects**. Those are filled by triagers and core team members
 and are covered in the :ref:`triaging` page. You don't need
 to worry about those when reporting issues as a Python user.
+
+
+Reporting many issues at once
+-----------------------------
+
+Static analysis, fuzzing, and similar tools can produce a large number of
+findings. If you plan to report them in bulk:
+
+* Run your analysis against the ``main`` branch, so that findings already
+  fixed in development are excluded.
+* Check each finding against existing reports, see
+  :ref:`checking-if-a-bug-already-exists` for more information.
+* Cross-check findings against the :ref:`security-policy`
+  to make sure it is not a security vulnerability. Vulnerabilities must be
+  reported privately, not on the issue tracker.
+* Rather than opening one issue per finding, open a single issue listing
+  them all, and link to the full details (reproducers, tracebacks, logs)
+  as `GitHub gists <https://gist.github.com/>`_. See :gh:`153852` for an
+  example.
 
 
 Working with issues
